@@ -6,6 +6,14 @@ This project is a comprehensive collection of machine learning (ML) model creati
 The purpose of this project is to explore and implement various machine learning models for both classification and regression tasks. Each model follows a structured pipeline—from loading and cleaning data, to training, evaluation, and saving the final trained model.
 
 The goal is to better understand how different models perform under different scenarios and datasets.
+IN SKLEARN WE HAVE GOALS:
+1.Getting the data ready
+2.Choose the right estimator/algorithm for our problems
+3.Fit the model/algorithm and use it to make predictions on our data
+4.Evaluating a model
+5.Improve a model
+6.Save and load a trained model
+7.Putting it all together
 
 💡 Models Covered
 This repository includes implementations of several popular machine learning algorithms, including:
@@ -85,3 +93,4 @@ Prepare for more advanced topics like Model Tuning, Ensemble Methods, and Deploy
 Steven Seagle Bremana Ginting
 AI Enthusiast | Future Technopreneur
 "I grow when others stop."
+
