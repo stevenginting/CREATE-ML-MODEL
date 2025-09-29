@@ -1,0 +1,82 @@
+📊 Machine Learning Model Evaluation
+
+Evaluating a machine learning model is just as important as building one.
+Different problems → different models → different evaluation metrics.
+
+🔹 Classification Model Evaluation Metrics
+
+Accuracy → Proportion of correct predictions.
+
+Best when classes are balanced.
+
+Range: 0 – 1 (1 = perfect).
+
+Precision → Of all predicted positives, how many are actually correct.
+
+High when false positives are low.
+
+Recall → Of all actual positives, how many were correctly predicted.
+
+High when false negatives are low.
+
+F1-score → Harmonic mean of precision and recall.
+
+Useful for imbalanced datasets.
+
+Confusion Matrix → Table comparing predictions vs actual values.
+
+Perfect predictions = diagonal line.
+
+Cross-validation → Splits data into folds, trains/tests on each, averages performance.
+
+Classification Report (sklearn) → Outputs precision, recall, F1-score.
+
+ROC Curve → Plot of True Positive Rate vs False Positive Rate.
+
+AUC Score → Area under the ROC curve.
+
+1.0 = perfect model.
+
+📌 Choosing classification metrics:
+
+Balanced classes → use accuracy.
+
+Imbalanced classes → focus on precision, recall, F1-score.
+
+If false positives are worse → aim for higher precision.
+
+If false negatives are worse → aim for higher recall.
+
+Always use a confusion matrix for visualization.
+
+🔹 Regression Model Evaluation Metrics
+
+R² (Coefficient of Determination)
+
+Compares predictions to the mean of target values.
+
+Range: -∞ to 1.
+
+0 = model only predicts the mean.
+
+1 = perfect predictions.
+
+Mean Absolute Error (MAE)
+
+Average of absolute differences between predictions and actual values.
+
+Interpretable as the “average mistake size.”
+
+Mean Squared Error (MSE)
+
+Average of squared differences.
+
+Punishes larger errors more heavily (outliers matter more).
+
+📌 Choosing regression metrics:
+
+R² → quick check, like accuracy.
+
+MAE → when being off by 10,000 is exactly twice as bad as being off by 5,000.
+
+MSE → when being off by 10,000 is more than twice as bad as being off by 5,000.
